@@ -10,12 +10,18 @@ FOS has a nice basic UI. I tried all other "WEB" desktops and they are all so ve
 Here is a quick list of my modifications:
 
 -Changed the icons settings sizes fonts and offsets in the various FOS js files. So that it looks pretty and can support 100s of FOS Windows if you ever feel like doing.
+
 -Added a basic "theme" switcher that slides between 2 CSS theme files. More or less a glorified version of a Day mode/ Night Mode toggle idea. 
+
 -Converted the main FOS index.html file into PHP and split up the FOS index page into seperate includes all located in the /includes directory.
+
 -Added boxedwine, Created an App example via FOS that loads up WinXP sol.exe within a FOS window. If Wine can run your app. Good changes boxedwine will load it as well. 
 
 
 Requirements:
+
+
 *Web server with at lease PHP5. file:// protocal not supported. Sorry not my rule. It's a web browser thing. 
+
 *Lots of time to build new FOS Windows!
 
