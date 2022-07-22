@@ -34,9 +34,14 @@ Requirements:
 
 
 *Web server with at lease PHP5. file:// protocal not supported. Sorry not my rule. It's a web browser thing. 
+
 *Server app handlers need to be properly setup for .wasm
+
 *Flatfile no database
 *Lots of time to build new FOS Windows!
+
+
+
 
 How to add FOS Windows:
 
