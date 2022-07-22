@@ -5,8 +5,6 @@ FOS Desktop Modified To PHP And Themed With CSS.  Including Support Of Running B
 
 ![image](https://github.com/hitsfm/FOS-PHP/blob/main/screenshots/FOS_Themes.png)
 
-![image](https://github.com/hitsfm/FOS-PHP/blob/main/screenshots/FOS_Themes.png)
-
 ![image](https://github.com/hitsfm/FOS-PHP/blob/main/screenshots/FOS_Windows.png)
 
 ![image](https://github.com/hitsfm/FOS-PHP/blob/main/screenshots/boxedwine_Winsol.png)
