@@ -1,0 +1,6 @@
+You can make nice text files and they show up in FOS!
+Simply edit this file located in FOS_Windows/home/changelog.txt
+
+-text
+-text
+-text
