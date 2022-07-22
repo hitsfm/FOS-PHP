@@ -7,6 +7,8 @@ I really enjoyed the original HTML script called FOS aka Fake Operating System. 
 
 Another issue I had ran into with the orginal HTML FOS js script is the obvious cluttering up of the index.html file. This static file holds all the FOS "sections" or modules. Windows,Icons information as html code. It was not long that with just adding a handful of FOS windows. My main index.html file was over 2k lines! Now build up even more and its not long until you end up with something with 10k plus lines of HTML code. As your site grows. This gets tedious to load and work with. So I first tried to load some various HTML js injecting scripts so I could kind of do like PHP includes but without PHP. No matter what this would break parts of the FOS scripts. I had no such luck. So I then moddified the main index.html file and converted it to PHP so that I could seperate all FOS sections into serpate static HTML includes files. You will thank me later as your site grows!
 
+The next issue I had was with the original FOS script. Adding the content of every FOS window is done all in the index.html file. This allows you to enter some text and some basic html. Issue is any advanced html,styles,scripts loading would break the whole FOS styles. I wanted to be able to theme every FOS window content the way I feel. So my fix was to make a folder for every "FOS" window content and within that folder include its own HTML file(full website). Like this you can load all CSS scripts and styles and load it up in a FOS window by calling it as an Iframe. See code example!
+
 
 FOS has a nice basic UI. I tried all other "WEB" desktops and they are all so very complicated. Some need perl. Some need databases. Yeah I understand they offer extra features like a fake "Task List" and user login and such. How ever for just a static site that hold information. Nothing of that was needed for me and I had a hard time understanding the hardcore programming codes, Some of these windows work and program more like real app modules you need to program in Java etc.....
 
@@ -32,6 +34,7 @@ Requirements:
 
 
 *Web server with at lease PHP5. file:// protocal not supported. Sorry not my rule. It's a web browser thing. 
-
+*Server app handlers need to be properly setup for .wasm
+*Flatfile no database
 *Lots of time to build new FOS Windows!
 
