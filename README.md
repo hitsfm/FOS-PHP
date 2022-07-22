@@ -52,12 +52,19 @@ How to add FOS Windows:
 Please take a look at the code. I have spent some great amount of time commenting what the code does. Just follow it as a template to add/moddify site content. I can give you some pointers.
 
 When you create a new FOS Window control html page. The ID must must be lower case and no numbers or else this breaks FOS!
+
 exemple: <fos-window name="winsol" (good)
+                     
 exemple: <fos-window name="WinSol" (bad)
+
 exemple: <fos-window name="win_sol" (bad)
+                     
 exemple: <fos-window name="winsol98" (bad)
+
 exemple: <fos-window name="winsol98" (bad)
+                     
 example: <fos-window name="winsolninetyeight" (good)
+
 
 The name is internal so no worries that it might show up on the site and look bad! Just keep them all unique.
 
