@@ -58,8 +58,6 @@ exemple: <fos-window name="winsol" (good)
 exemple: <fos-window name="WinSol" (bad)
 
 exemple: <fos-window name="win_sol" (bad)
-                     
-exemple: <fos-window name="winsol98" (bad)
 
 exemple: <fos-window name="winsol98" (bad)
                      
