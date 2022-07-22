@@ -22,7 +22,7 @@ Here is a quick list of my modifications:
 
 -Added a basic "theme" switcher that slides between 2 CSS theme files. More or less a glorified version of a Day mode/ Night Mode toggle idea. 
 
--Converted the main FOS index.html file into PHP and split up the FOS index page into seperate includes all located in the /includes directory.
+-Converted the main FOS index.html file into PHP and split up the FOS index page into seperate includes,located in /includes directory. Taking advantage of PHP readfile function.
 
 -Added boxedwine, Created an App example via FOS that loads up WinXP sol.exe within a FOS window. If Wine can run your app. Good changes boxedwine will load it as well. 
 
@@ -37,4 +37,25 @@ Requirements:
 *Server app handlers need to be properly setup for .wasm
 *Flatfile no database
 *Lots of time to build new FOS Windows!
+
+How to add FOS Windows:
+
+Please take a look at the code. I have spent some great amount of time commenting what the code does. Just follow it as a template to add/moddify site content. I can give you some pointers.
+
+When you create a new FOS Window control html page. The ID must must be lower case and no numbers or else this breaks FOS!
+exemple: <fos-window name="winsol" (good)
+exemple: <fos-window name="WinSol" (bad)
+exemple: <fos-window name="win_sol" (bad)
+exemple: <fos-window name="winsol98" (bad)
+exemple: <fos-window name="winsol98" (bad)
+example: <fos-window name="winsolninetyeight" (good)
+
+The name is internal so no worries that it might show up on the site and look bad! Just keep them all unique.
+
+
+
+Because the index is PHP and broken down into includes. Once you built a new FOS window folder and html files. Don't forget to call that html file by adding a new php function readfile line pointing to the new FOS window html or else your new icon won't load anything. Take a look at code example. It is well documented within. I tried to make this as simple and easy to maintain and update as the site grows.
+                     
+
+*
 
