@@ -1,0 +1,23 @@
+<!-- Basic Theme Switcher Script -->
+
+	<script>
+function switchTheme() {
+  var check = document
+  .getElementById('theme_css')
+  .classList[0] === 'glow';
+
+  var element = document.getElementById('theme_css');
+
+
+  if (check) {
+   element.href = 'css/main.min.css';
+   element.classList.remove('glow')
+   element.classList.add('win95');
+  } else {
+   element.href = 'css/main.css';
+   element.classList.remove('win95')
+   element.classList.add('glow');
+  }
+
+}
+</script>

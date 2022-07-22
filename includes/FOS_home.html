@@ -1,0 +1,102 @@
+<fos-window name="home" title="Home">
+	
+<fos-desktop id="mainDesktop">
+	
+<!-- FOS Home Window Icons. No Scroll to avoid browser bug on icon drag outside of Root FOS desktop by using fixed="true" -->
+	
+<fos-icon href="homefolderone" name="Home Folder 1" fixed="true">
+<img src="icon/folder.png" alt="" title="">
+</fos-icon>
+
+
+<fos-icon href="homepageone" name="Page Content 1 " fixed="true">
+<img src="icon/page.png" alt="" title="">
+</fos-icon>
+
+
+<fos-icon href="changelog" name="Changelog.txt" fixed="true">
+<img src="icon/txt.png" alt="" title="">
+</fos-icon>
+
+
+<!-- FOS Home Window Background called by iframes -->
+
+<iframe id="FOSWindowBackground"
+    title="FOSWindowBackground"
+    width="400"
+    height="450"
+    src="FOS_Window_Background/index.html" scrolling="no">
+</iframe>
+</fos-window>
+
+<!-- FOS "Home" Window "Folder 1", Embedded additional FOS "Desktop" Without Bar.No Scroll to avoid browser bug on icon drag outside of Root FOS desktop by using fixed="true" -->
+
+<fos-window name="homefolderone" title="Home Folder One Content">
+<fos-desktop id="mainDesktop">
+	
+<fos-icon href="homefolderonepage" name="Page Content 1" fixed="true">
+<img src="icon/page.png" alt="" title="">
+</fos-icon>
+
+<fos-icon href="homefolderonetext" name="Folder One.txt" fixed="true">
+<img src="icon/txt.png" alt="" title="">
+</fos-icon>
+
+<iframe id="FOSWindowBackground"
+    title="FOSWindowBackground"
+    width="400"
+    height="450"
+    src="FOS_Window_Background/index.html" scrolling="no">
+</iframe>
+
+</fos-window>
+
+<!-- FOS "Home" page 1 content called by iframes -->
+
+<fos-window name="homepageone" title="FOS Window Page">
+	
+
+<iframe id="homepageone"
+    title="homepageone"
+    width="400"
+    height="450"
+    src="FOS_Windows/home/homepageone.html">
+</iframe>
+</fos-window>
+
+<!-- FOS "Home" "folder 1" Page content called by iframes -->
+
+<fos-window name="homefolderonepage" title="FOS Window Page">
+	
+
+<iframe id="homefolderonepage"
+    title="homefolderonepage"
+    width="400"
+    height="450"
+    src="FOS_Windows/homefolderonepage/index.html">
+</iframe>
+</fos-window>
+	
+<!-- FOS "Home" "folder 1" .txt file content called by iframes -->
+
+<fos-window name="homefolderonetext" title="FOS.txt">
+	
+
+<iframe id="homefolderonetext"
+    title="homefolderonetext"
+    width="400"
+    height="450"
+    src="FOS_Windows/homefolderonepage/homefolderone.txt">
+</iframe>
+</fos-window>
+
+<!-- FOS "Home" "changelog.txt" .txt file content called by iframes -->
+	
+<fos-window name="changelog" title="changelog.txt">
+<iframe id="changelog"
+    title="changelog"
+    width="400"
+    height="450"
+    src="FOS_Windows/home/changelog.txt">
+</iframe>
+</fos-window>
