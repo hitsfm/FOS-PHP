@@ -1,6 +1,18 @@
 # FOS-PHP
 FOS Desktop Modified To PHP And Themed With CSS.  Including Support Of Running Basic Windows Apps From The Browser.
 
+![image](https://github.com/hitsfm/FOS-PHP/blob/main/screenshots/FOS_Startmenu.png)
+
+![image](https://github.com/hitsfm/FOS-PHP/blob/main/screenshots/FOS_Themes.png)
+
+![image](https://github.com/hitsfm/FOS-PHP/blob/main/screenshots/FOS_Themes.png)
+
+![image](https://github.com/hitsfm/FOS-PHP/blob/main/screenshots/FOS_Windows.png)
+
+![image](https://github.com/hitsfm/FOS-PHP/blob/main/screenshots/boxedwine_Winsol.png)
+
+
+
 
 I really enjoyed the original HTML script called FOS aka Fake Operating System. It is a very nice basic desktop like UI. It really simulates a polished version of what the Windows 3.1 Program Manager worked like. But after building up a few windows with the FOS script. I quickly understood how quicky things got glitchy. The original script had settings in the verious js scripts that has settings like icon sizes offset math etc... It had been setup to show a nice offset when you open up FOS windows. This is not needed but it looked pretty as your many opened FOS windows don't just over lap one another. But after about 6 windows. The FOS windows would open up out of the browsers view range. I had the idea of building a large site with FOS so this could not work.
 
