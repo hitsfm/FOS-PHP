@@ -57,11 +57,11 @@ Requirements:
 
 
 
-How to add FOS Windows:
+How to add FOS-PHP Windows:
 
 Please take a look at the code. I have spent some great amount of time commenting what the code does. Just follow it as a template to add/moddify site content. I can give you some pointers.
 
-When you create a new FOS Window control html page. The ID must must be lower case and no numbers or else this breaks FOS!
+When you create a new FOS-PHP Window control html page. The ID must must be lower case and no numbers or else this breaks FOS-PHP!
 
 exemple: <fos-window name="winsol" (good)
                      
@@ -80,11 +80,11 @@ The name is internal so no worries that it might show up on the site and look ba
 
 Because the index is PHP and broken down into includes, Here are some quicks steps to get you started.
                      
- -Create a new FOS window folder in your FOS_Windows/ dir. Build up html site contents, graphics, css scripts, backgrounds etc, Have one index.html in the root of this new dir to later call in PHP-FOS. Be free to make the site pretty. It will be the content of thiw new PHP-FOS window. 
+ -Create a new FOS-PHP "window" folder in your FOS_Windows/ dir. Build up html site contents, graphics, css scripts, backgrounds etc, Have one index.html in the root of this new dir to later call in PHP-FOS. Be free to make the site pretty. It will be the content of thiw new PHP-FOS window. 
                      
- -Update the includes/rootdesktop_icons.html adding new lines to assosiate a new icon graphic file and icon name to the PHP-FOS root desktop. This HTML file also contains the links to the /includes/FOS_yournewwindowcontrol.html files.
+ -Update the includes/rootdesktop_icons.html adding new lines to assosiate a new icon graphic file and icon name to the FOS-PHP root desktop. This HTML file also contains the links to the /includes/FOS_yournewwindowcontrol.html files.
  
--Create a new html file under includes/FOS_mynewwindow.html. Replace "mynewwindow" with the name of your new window. Choose one that you can identify. It's your choice! Keep it simple so you can remember. Like the name of an "app" if its a web app. Just to keep things easiser for you. The code in this html is to control a PHP-FOS js script. It needs to be one and only one format. This new file tells PHP-FOS how to "render" this window. Most of the time it will look a little something like this:
+-Create a new html file under includes/FOS_mynewwindow.html. Replace "mynewwindow" with the name of your new window. Choose one that you can identify. It's your choice! Keep it simple so you can remember. Like the name of an "app" if its a web app. Just to keep things easiser for you. The code in this html is to control a PHP-FOS js script. It needs to be one and only one format. This new file tells FOS-PHP how to "render" this window. Most of the time it will look a little something like this:
   
 	<fos-window name="about" title="About This Site">
 
@@ -103,7 +103,7 @@ Because the index is PHP and broken down into includes, Here are some quicks ste
         </fos-window>
 
 	
-We use iframes to fill the contents of our PHP-FOS window with the index.html site over at FOS_Windoows/about/index.html. This allows us for full control of the PHP-FOS window content by just being a seperate site in its own sub directory and just calling it via an iframe. This lets us make some nice themse and have scripts and CSS within that site directory only, that won't screw up the main PHP-FOS desktop layouts and behaviours. We also can define our PHP-FOS window sizes.
+We use iframes to fill the contents of our FOS-PHP window with the index.html site over at FOS_Windoows/about/index.html. This allows us for full control of the FOS-PHP window content, by just being a seperate site in its own sub directory and just calling it via an iframe. This lets us make some nice themse and have scripts and CSS within that site directory only, that won't screw up the main FOS-PHP desktop layouts and behaviours. We also can define our FOS-PHP window sizes.
                      
 If your going to build a "Sub" desktop that consists of more icons. Such as a "program" group or "topic"  and wish that to show up instead of the contents called via an iframe, instead here is what the code will look like. This method is a little more complicated but yet easy. Taking a look inside this file would then look like this:
                      
@@ -111,7 +111,7 @@ If your going to build a "Sub" desktop that consists of more icons. Such as a "p
 	
 	<fos-desktop id="mainDesktop">
 	
-	<!-- PHP-FOS Home Window Icons. No Scroll to avoid browser bug on icon drag outside of Root PHP-FOS desktop by using fixed="true" -->
+	<!-- FOS-PHP  Window Icons. No Scroll to avoid browser bug on icon drag outside of Root FOS-PHP desktop by using fixed="true" -->
 	
 	<fos-icon href="mainnews" name="Main News" fixed="true">
 
@@ -128,7 +128,7 @@ If your going to build a "Sub" desktop that consists of more icons. Such as a "p
 	</fos-icon>
 
 
-	<!-- This PHP-FOS Window Background And Size by iframes -->
+	<!-- This FOS-PHP Window Background And Size by iframes -->
 
 	<iframe id="FOSWindowBackground"
 
@@ -147,5 +147,5 @@ If your going to build a "Sub" desktop that consists of more icons. Such as a "p
                      
                      
   
-Don't forget to call this html file over at includes/FOS_yournewwindowcontrol.html. By adding a new php function readfile line pointing to the new PHP-FOS control html or else your new PHP-FOS root desktop icon won't load anything.(Call the above html to fill this PHP-FOS window with) Take a look at code example. It is well documented within. I tried to make this as simple and easy to maintain and update as the site grows.
+Don't forget to call this html file over at includes/FOS_yournewwindowcontrol.html. By adding a new php function readfile line pointing to the new FOS-PHP control html or else your new FOS-PHP root desktop icon won't load anything.(Call the above html to fill this FOS-PHP window with) Take a look at code example. It is well documented within. I tried to make this as simple and easy to maintain and update as the site grows.
                      
