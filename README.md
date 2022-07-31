@@ -86,64 +86,63 @@ Because the index is PHP and broken down into includes, Here are some quicks ste
  
 -Create a new html file under includes/FOS_mynewwindow.html. Replace "mynewwindow" with the name of your new window. Choose one that you can identify. It's your choice! Keep it simple so you can remember. Like the name of an "app" if its a web app. Just to keep things easiser for you. The code in this html is to control a PHP-FOS js script. It needs to be one and only one format. This new file tells PHP-FOS how to "render" this window. Most of the time it will look a little something like this:
   
-<fos-window name="about" title="About This Site">
+	<fos-window name="about" title="About This Site">
 
-<iframe id="About"
+        <iframe id="About"
 
-title="About"
+        title="About"
     
-width="800"
+        width="800"
     
-height="400"
+        height="400"
 
-src="FOS_Windoows/about/index.html">
+        src="FOS_Windoows/about/index.html">
 
-</iframe>
+        </iframe>
 
-</fos-window>
-
+        </fos-window>
 
 	
-	We use iframes to fill the contents of our PHP-FOS window with the index.html site over at FOS_Windoows/about/index.html. This allows us for full control of the PHP-FOS window content by just being a seperate site in its own sub directory and just calling it via an iframe. This lets us make some nice themse and have scripts and CSS within that site directory only, that won't screw up the main PHP-FOS desktop layouts and behaviours. We also can define our PHP-FOS window sizes.
+We use iframes to fill the contents of our PHP-FOS window with the index.html site over at FOS_Windoows/about/index.html. This allows us for full control of the PHP-FOS window content by just being a seperate site in its own sub directory and just calling it via an iframe. This lets us make some nice themse and have scripts and CSS within that site directory only, that won't screw up the main PHP-FOS desktop layouts and behaviours. We also can define our PHP-FOS window sizes.
                      
 If your going to build a "Sub" desktop that consists of more icons. Such as a "program" group or "topic"  and wish that to show up instead of the contents called via an iframe, instead here is what the code will look like. This method is a little more complicated but yet easy. Taking a look inside this file would then look like this:
                      
-<fos-window name="mynewssection" title="Your News">
+	<fos-window name="mynewssection" title="Your News">
 	
-<fos-desktop id="mainDesktop">
+	<fos-desktop id="mainDesktop">
 	
-<!-- PHP-FOS Home Window Icons. No Scroll to avoid browser bug on icon drag outside of Root PHP-FOS desktop by using fixed="true" -->
+	<!-- PHP-FOS Home Window Icons. No Scroll to avoid browser bug on icon drag outside of Root PHP-FOS desktop by using fixed="true" -->
 	
-<fos-icon href="mainnews" name="Main News" fixed="true">
+	<fos-icon href="mainnews" name="Main News" fixed="true">
 
 
-<img src="icon/mainnews.png" alt="" title="">
+	<img src="icon/mainnews.png" alt="" title="">
 
-</fos-icon>
-
-
-<fos-icon href="fakenews" name="Fake News" fixed="true">
-
-<img src="icon/fakenews.png" alt="" title="">
-
-</fos-icon>
+	</fos-icon>
 
 
-<!-- This PHP-FOS Window Background And Size by iframes -->
+	<fos-icon href="fakenews" name="Fake News" fixed="true">
 
-<iframe id="FOSWindowBackground"
+	<img src="icon/fakenews.png" alt="" title="">
 
-title="FOSWindowBackground"
+	</fos-icon>
 
-width="400"
 
-height="450"
+	<!-- This PHP-FOS Window Background And Size by iframes -->
 
-src="FOS_Window_Background/index.html" scrolling="no">
+	<iframe id="FOSWindowBackground"
 
-</iframe>
+	title="FOSWindowBackground"
 
-</fos-window>
+	width="400"
+
+	height="450"
+
+	src="FOS_Window_Background/index.html" scrolling="no">
+
+	</iframe>
+
+	</fos-window>
                      
                      
                      
