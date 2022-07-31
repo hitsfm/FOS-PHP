@@ -103,7 +103,8 @@ src="FOS_Windoows/about/index.html">
 </fos-window>
 
 
-We use iframes to fill the contents of our PHP-FOS window with the index.html site over at FOS_Windoows/about/index.html. This allows us for full control of the PHP-FOS window content by just being a seperate site in its own sub directory and just calling it via an iframe. This lets us make some nice themse and have scripts and CSS within that site directory only, that won't screw up the main PHP-FOS desktop layouts and behaviours. We also can define our PHP-FOS window sizes.
+	
+	We use iframes to fill the contents of our PHP-FOS window with the index.html site over at FOS_Windoows/about/index.html. This allows us for full control of the PHP-FOS window content by just being a seperate site in its own sub directory and just calling it via an iframe. This lets us make some nice themse and have scripts and CSS within that site directory only, that won't screw up the main PHP-FOS desktop layouts and behaviours. We also can define our PHP-FOS window sizes.
                      
 If your going to build a "Sub" desktop that consists of more icons. Such as a "program" group or "topic"  and wish that to show up instead of the contents called via an iframe, instead here is what the code will look like. This method is a little more complicated but yet easy. Taking a look inside this file would then look like this:
                      
